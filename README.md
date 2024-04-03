@@ -18,6 +18,13 @@ EcoFlow Access Credentials: Additionally, you'll require the EcoFlow AccessKey a
 # Installation
 After installation of Pyscript integration pls install the set_ef_powerstream_custom_load_power.py in your pyscript directory. This directory is located in your Home Assitant Home Directory.
 
+**Please update** in the script **set_ef_powerstream_custom_load_power.py** your **key** and **secret**:
+```
+# Replace with valid access/secret keys and device SN
+    key = 'example123'
+    secret = 'example123'
+```
+
 # Usage
 Set Power Stream: Call the set_ef_powerstream_custom_load_power function with parameters SerialNumber, TotalPower, and optional parameter Automation to adjust the power stream settings for the specified EcoFlow device.
 
