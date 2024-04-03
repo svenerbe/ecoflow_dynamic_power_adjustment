@@ -11,9 +11,9 @@ Device Status Check: Enables checking the online status of a specified EcoFlow d
 Authentication: Handles authentication with the EcoFlow API using access and secret keys, ensuring secure communication with the EcoFlow platform.
 
 # Prerequisites
-Pyscript Integration: To get started, you'll first need to install Pyscript: Python scripting integration, available at Pyscript GitHub Repository. This integration enables the execution of Python scripts within Home Assistant, facilitating advanced automation tasks and interactions with external APIs.
+Pyscript Integration: To get started, you'll first need to install Pyscript: Python scripting integration, available at [Pyscript GitHub Repository](https://github.com/custom-components/pyscript). This integration enables the execution of Python scripts within Home Assistant, facilitating advanced automation tasks and interactions with external APIs.
 
-EcoFlow Access Credentials: Additionally, you'll require the EcoFlow AccessKey and SecretKey, obtainable through a request at EcoFlow Developer Portal. These credentials are necessary for authenticating API requests with the EcoFlow platform.
+EcoFlow Access Credentials: Additionally, you'll require the EcoFlow AccessKey and SecretKey, obtainable through a request at [EcoFlow Developer Portal](https://developer-eu.ecoflow.com/). These credentials are necessary for authenticating API requests with the EcoFlow platform.
 
 # Installation
 After installation of Pyscript integration pls install the set_ef_powerstream_custom_load_power.py in your pyscript directory. This directory is located in your Home Assitant Home Directory.
@@ -25,7 +25,7 @@ Check Device Status: Utilize the check_if_device_is_online function to determine
 
 You can call the Service in your Automation.
 
-# Sample:
+## Sample:
 ```
 service: pyscript.set_ef_powerstream_custom_load_power
 data:
