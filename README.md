@@ -1,4 +1,4 @@
-# EcoFlow Device API Integration for PowerStream Control
+# EcoFlow Device API Integration for PowerStream dynamic power adjustment
 
 # Overview
 This service script facilitates interaction with the EcoFlow device API to manage power streams, specifically targeting sensors on EcoFlow devices. It includes functions for querying device status, adjusting power stream settings, and handling authentication with the EcoFlow API.
