@@ -26,13 +26,13 @@ Check Device Status: Utilize the check_if_device_is_online function to determine
 You can call the Service in your Automation.
 
 # Sample:
-
+```
 service: pyscript.set_ef_powerstream_custom_load_power
 data:
   SerialNumber: Your Serial Nr.
   TotalPower: "{{ states('sensor.your sensor') | round }}"
   Automation: true
-
+```
 
 # Dependencies
 Python Libraries: Utilizes standard Python libraries such as requests, hashlib, hmac, random, time, binascii, and json for handling API requests, authentication, and data manipulation.
@@ -47,9 +47,9 @@ This service script provides a convenient way to integrate EcoFlow device contro
 
 # Debuging
 You can enable debugging for pyscript in your automation.yaml like this:
-
+```
 logger:
   default: info
   logs:
     custom_components.pyscript: debug
-
+```
