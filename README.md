@@ -18,6 +18,12 @@ EcoFlow Access Credentials: Additionally, you'll require the EcoFlow AccessKey a
 # Installation
 After installation of Pyscript integration pls install the set_ef_powerstream_custom_load_power.py in your pyscript directory. This directory is located in your Home Assitant Home Directory.
 
+```
+# sample:
+cd $HomeAssitant/pyscript     // not in $HomeAssitant/custom_components!!!!!
+```
+
+
 **Please update** in the script **set_ef_powerstream_custom_load_power.py** your **key** and **secret**:
 ```
 # Replace with valid access/secret keys and device SN
@@ -30,9 +36,15 @@ Set Power Stream: Call the set_ef_powerstream_custom_load_power function with pa
 
 Check Device Status: Utilize the check_if_device_is_online function to determine the online status of a specified EcoFlow device, providing the Serial Number as input.
 
-You can call the Service in your Automation.
+You can call the Service in your **Automation**. To call this in your automation, you need to create a new Action and select than the service - Pyscript Python scripting: set_ef_powerstream_custom_load_power. You can as well serach for this by typing -- powerstream --.
+The Pyscript Python scripting: set_ef_powerstream_custom_load_power needs additional data like 'SerialNumber', 'TotalPower' and optional Automation.
 
-## Sample:
+Here a sample action screenshot:
+
+![image](https://github.com/svenerbe/ecoflow_dynamic_power_adjustment/assets/24878253/e890a31c-329c-416a-a699-b3fd004d90c6)
+
+
+## Sample as yaml:
 ```
 service: pyscript.set_ef_powerstream_custom_load_power
 data:
