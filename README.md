@@ -1,5 +1,9 @@
 # EcoFlow Device API Integration for PowerStream dynamic power adjustment
 
+# **Important:** 
+
+The last Version of the [EcoFlow Cloud Integration for Home Assistant](https://github.com/tolwi/hassio-ecoflow-cloud) supports now the EcoFlow API. Please take a look, and many thanks for the great work @tolwi.
+
 # Overview
 This service script facilitates interaction with the EcoFlow device API to manage power streams, specifically targeting sensors on EcoFlow devices. It includes functions for querying device status, adjusting power stream settings, and handling authentication with the EcoFlow API.
 
